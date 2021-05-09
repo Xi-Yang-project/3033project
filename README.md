@@ -20,9 +20,9 @@ In this project, we use two datasets. one is [the IMDB-WIKI dataset](https://dat
 
 This dataset contains the most popular 100,000 actors as listed on the IMDb website and (automatically) and their profiles date of birth, name, gender and all images related to that person. There all total 101 age classes.In this project, we only consider the age below 80 and we group those image into 3 age classes, 5 age classes, and 10 age classes.\
 For this project, we only use cropped faces(total 171318 images) and ramdom select 20,000 images for training and validatoin. Train-valisation split is implemented in the model code.\
-1.download the cropped images and the metadata\
-2.run load_data_imdb.ipynb to get the matrix representation for each image.\
-2.1 run read_data(db) first to get age and gender information for each image\
+1. download the cropped images and the metadata
+2. run load_data_imdb.ipynb to get the matrix representation for each image.
+2.1 run read_data(db) first to get age and gender information for each image
 2.2 run create_data_3(),create_data_5(),create_data_10() to get images grouped in 3 age classes, 5 age classes, and 10 age classes.
 #### UTKFace dataset
 -load_data_utkface.ipynb : load UTKFace dataset
@@ -46,7 +46,7 @@ build_age_branch(),build_gender_branch(),build_race_branch() are three functions
 
 
 ## Image Prediction
-- age_gender_race_reference.ipynb\
+- age_gender_race_reference.ipynb
 1. upload the image
 2. upload the wight of final model
 3. use MTCNN to detect the face
