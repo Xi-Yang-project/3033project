@@ -1,19 +1,15 @@
 # 3033project
 
-# Abstract
+## Abstract
 In  this  work,  we  explore  ways  to  accurately predict  the  age  of  a  person  from  their  portraits.  We regard it as a classification problem first since the target age is divided into severalgroups.  We also explore the possibility of regarding  this  problem  as  regression  as  we  increase the granularity.  After building the age detection model with just one label, two more labels  (gender,  race)  are  added  to  build  the multi-task learning model.  Multitask learningis believed to provide more information for the target task than the single-task leaning model.We learn all three tasks jointly to improve prediction accuracy.  We used both single source and multiple source dataset to examine the possibility of multi-source multi-task leaning.
 
 ## Libraries
--cv2\\
--keras
-
--efficientnet.keras
-
--mtcnn 
-
--numpy
-
--pandas
+- cv2
+- keras
+- efficientnet.keras
+- mtcnn 
+- numpy
+- pandas
 
 
 
