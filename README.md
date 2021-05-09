@@ -16,44 +16,32 @@ In  this  work,  we  explore  ways  to  accurately predict  the  age  of  a  per
 ## Datasets
 In this project, we use two datasets. one is [the IMDB-WIKI dataset](https://data.vision.ee.ethz.ch/cvl/rrothe/imdb-wiki/) and the other is [the UTKFace dataset](https://susanqq.github.io/UTKFace/). 
 #### IMDB-WIKI dataset
+-load_data_imdb.ipynb : load IMDB-WIKI dataset
 
 This dataset contains the most popular 100,000 actors as listed on the IMDb website and (automatically) and their profiles date of birth, name, gender and all images related to that person. There all total 101 age classes.In this project, we only consider the age below 80 and we group those image into 3 age classes, 5 age classes, and 10 age classes.\
-- age: is an integer from 0 to 101, indicating the age
-- gender: is either 0 (male) or 1 (female)
-
 For this project, we only use cropped faces(total 171318 images) and ramdom select 20,000 images for training and validatoin. Train-valisation split is implemented in the model code.\
 1.download the cropped images and the metadata\
 2.run load_data_imdb.ipynb to get the matrix representation for each image.\
 2.1 run read_data(db) first to get age and gender information for each image\
 2.2 run create_data_3(),create_data_5(),create_data_10() to get images grouped in 3 age classes, 5 age classes, and 10 age classes.
 #### UTKFace dataset
-This dataset is a large-scale face dataset with long age span (range from 0 to 116 years old). The dataset consists of over 20,000 face images with annotations of age, gender, and ethnicity. This dataset doesn't have metadata file. The labels are included in the file name, like age_gender_race_date&time.jpg. In this project, we only consider the age below 80 and we group those image into 3 age classes, 5 age classes, and 10 age classes.
-- age: is an integer from 0 to 116, indicating the age
-- gender: is either 0 (male) or 1 (female)
-- race: is an integer from 0 to 4, denoting White, Black, Asian, Indian, and Others (like Hispanic, Latino, Middle Eastern
+-load_data_utkface.ipynb : load UTKFace dataset
+This dataset is a large-scale face dataset with long age span (range from 0 to 116 years old). The dataset consists of over 20,000 face images with annotations of age, gender, and ethnicity. This dataset doesn't have metadata file. The labels are included in the file name, like age_gender_race_date&time.jpg. In this project, we only consider the age below 80 and we group those image into 3 age classes, 5 age classes, and 10 age classes.\
 
 For this project, we only use cropped faces(total 21318 images) and ramdom select 20,000 images for training and validatoin. Train-valisation split is implemented in the model code.\
 1.download the cropped images\
 2.run load_data_imdb.ipynb to get the matrix representation for each image.\
 2.1 run create_3utk_data(),create_5utk_data(),create_10utk_data() to get images grouped in 3 age classes, 5 age classes, and 10 age classes.
 
-#### Multi-source dataset
-
-
 ## Models
 There are 5 files in this models folder. 
-- age_prediction.ipynb
-- age_gender_pre
-- 
-- 
-- One for age single-task learning(two datasets), two for age-gender two-task leanring(one for IMDB, one for UTKFace), and two for age-gender-race three-task leanring(One for UTKFace, One for multi-source).build_age_branch(),build_gender_branch(),build_race_branch() are three functions used for adding more tasks.
-The age_gender_race model has the best validation accuracy. We use below three model to do reference.
+- age_prediction.ipynb : model for age prediction based on two datasets
+- age_gender_utk.ipynb : model for age-gender prediction based on UTKFace dataset
+- age_gender_imdb.ipynb : model for age-gender prediction based on IMDB-WIKI dataset
+- age_gender_race_utk.ipynb：model for age-gender-race prediction based on UTKFace dataset
+- age_gender_race_multisource.ipynb：model for age-gender-race prediction based on multi-source dataset
+build_age_branch(),build_gender_branch(),build_race_branch() are three functions used for adding more tasks.
 
-|  Models | Age classes|  Val accuracy |
-|-----|-------|-------|
-| B6 | 3 classes|0.7165|
-| B4 | 5 classes|0.6790|
-| B4 |  10 classes|0.4787|
 
 
 ## Image Prediction
@@ -64,11 +52,6 @@ The age_gender_race model has the best validation accuracy. We use below three m
 4.crop the image\
 5.predict the iamge\
 6.add box and label for image
-
-The refernce results for those three models are shown below:
-![image](https://github.com/Xi-Yang-project/3033project/blob/main/reference%20images/3ageclasses_prediction.png)
-![image](https://github.com/Xi-Yang-project/3033project/blob/main/reference%20images/5ageclasses_prediction.png)
-![image](https://github.com/Xi-Yang-project/3033project/blob/main/reference%20images/10ageclasses_prediction.png)
 
 
 
