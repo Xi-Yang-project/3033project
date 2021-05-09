@@ -51,12 +51,12 @@ The age_gender_race model has the best validation accuracy. We use below three m
 
 
 ## Image Prediction
-Deyailed image prediction code is shown in age_gender_race_reference.ipynb
-1.upload the image
-2.upload the wight of final model
-3.use MTCNN to detect the face
-4.crop the image
-5.predict the iamge
+Deyailed image prediction code is shown in age_gender_race_reference.ipynb\
+1.upload the image\
+2.upload the wight of final model\
+3.use MTCNN to detect the face\
+4.crop the image\
+5.predict the iamge\
 6.add box and label for image
 
 The refernce results for those three models are shown below:
