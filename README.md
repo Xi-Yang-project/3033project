@@ -44,12 +44,12 @@ There are 5 files in this models folder.
 
 ## Image Prediction
 - age_gender_race_reference.ipynb
-1. upload the image
+1. upload the image you want to predict
 2. upload the wight of final model
 3. use MTCNN to detect the face
 4. crop the image
-5. predict the iamge
-6. add box and label for image
+5. predict the image
+6. add box and labels for image
 
 
 
