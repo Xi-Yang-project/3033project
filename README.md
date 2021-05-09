@@ -1,4 +1,4 @@
-# 3033project
+# Multi-Task Learning Based Age Detection for Image
 
 ## Abstract
 In  this  work,  we  explore  ways  to  accurately predict  the  age  of  a  person  from  their  portraits.  We regard it as a classification problem first since the target age is divided into severalgroups.  We also explore the possibility of regarding  this  problem  as  regression  as  we  increase the granularity.  After building the age detection model with just one label, two more labels  (gender,  race)  are  added  to  build  the multi-task learning model.  Multitask learningis believed to provide more information for the target task than the single-task leaning model.We learn all three tasks jointly to improve prediction accuracy.  We used both single source and multiple source dataset to examine the possibility of multi-source multi-task leaning.
@@ -16,6 +16,7 @@ In  this  work,  we  explore  ways  to  accurately predict  the  age  of  a  per
 ## Datasets
 In this project, we use two datasets. one is [the IMDB-WIKI dataset](https://data.vision.ee.ethz.ch/cvl/rrothe/imdb-wiki/) and the other is [the UTKFace dataset](https://susanqq.github.io/UTKFace/). 
 #### IMDB-WIKI dataset
+
 This dataset contains the most popular 100,000 actors as listed on the IMDb website and (automatically) and their profiles date of birth, name, gender and all images related to that person. There all total 101 age classes.In this project, we only consider the age below 80 and we group those image into 3 age classes, 5 age classes, and 10 age classes.\
 - age: is an integer from 0 to 101, indicating the age
 - gender: is either 0 (male) or 1 (female)
@@ -40,7 +41,12 @@ For this project, we only use cropped faces(total 21318 images) and ramdom selec
 
 
 ## Models
-There are 5 files in this models folder. One for age single-task learning(two datasets), two for age-gender two-task leanring(one for IMDB, one for UTKFace), and two for age-gender-race three-task leanring(One for UTKFace, One for multi-source).build_age_branch(),build_gender_branch(),build_race_branch() are three functions used for adding more tasks.
+There are 5 files in this models folder. 
+- age_prediction.ipynb
+- age_gender_pre
+- 
+- 
+- One for age single-task learning(two datasets), two for age-gender two-task leanring(one for IMDB, one for UTKFace), and two for age-gender-race three-task leanring(One for UTKFace, One for multi-source).build_age_branch(),build_gender_branch(),build_race_branch() are three functions used for adding more tasks.
 The age_gender_race model has the best validation accuracy. We use below three model to do reference.
 
 |  Models | Age classes|  Val accuracy |
@@ -51,7 +57,7 @@ The age_gender_race model has the best validation accuracy. We use below three m
 
 
 ## Image Prediction
-Deyailed image prediction code is shown in age_gender_race_reference.ipynb\
+- age_gender_race_reference.ipynb\
 1.upload the image\
 2.upload the wight of final model\
 3.use MTCNN to detect the face\
