@@ -16,7 +16,7 @@ In  this  work,  we  explore  ways  to  accurately predict  the  age  of  a  per
 ## Datasets
 In this project, we use two datasets. one is [the IMDB-WIKI dataset](https://data.vision.ee.ethz.ch/cvl/rrothe/imdb-wiki/) and the other is [the UTKFace dataset](https://susanqq.github.io/UTKFace/). 
 #### IMDB-WIKI dataset
--load_data_imdb.ipynb : load IMDB-WIKI dataset
+- load_data_imdb.ipynb : load IMDB-WIKI dataset
 
 This dataset contains the most popular 100,000 actors as listed on the IMDb website and (automatically) and their profiles date of birth, name, gender and all images related to that person. There all total 101 age classes.In this project, we only consider the age below 80 and we group those image into 3 age classes, 5 age classes, and 10 age classes.\
 For this project, we only use cropped faces(total 171318 images) and ramdom select 20,000 images for training and validatoin. Train-valisation split is implemented in the model code.\
@@ -29,8 +29,8 @@ For this project, we only use cropped faces(total 171318 images) and ramdom sele
 This dataset is a large-scale face dataset with long age span (range from 0 to 116 years old). The dataset consists of over 20,000 face images with annotations of age, gender, and ethnicity. This dataset doesn't have metadata file. The labels are included in the file name, like age_gender_race_date&time.jpg. In this project, we only consider the age below 80 and we group those image into 3 age classes, 5 age classes, and 10 age classes.\
 
 For this project, we only use cropped faces(total 21318 images) and ramdom select 20,000 images for training and validatoin. Train-valisation split is implemented in the model code.\
-1.download the cropped images\
-2.run load_data_imdb.ipynb to get the matrix representation for each image.\
+1. download the cropped images\
+2. run load_data_imdb.ipynb to get the matrix representation for each image.\
 2.1 run create_3utk_data(),create_5utk_data(),create_10utk_data() to get images grouped in 3 age classes, 5 age classes, and 10 age classes.
 
 ## Models
@@ -46,12 +46,12 @@ build_age_branch(),build_gender_branch(),build_race_branch() are three functions
 
 ## Image Prediction
 - age_gender_race_reference.ipynb\
-1.upload the image\
-2.upload the wight of final model\
-3.use MTCNN to detect the face\
-4.crop the image\
-5.predict the iamge\
-6.add box and label for image
+1. upload the image\
+2. upload the wight of final model\
+3. use MTCNN to detect the face\
+4. crop the image\
+5. predict the iamge\
+6. add box and label for image
 
 
 
