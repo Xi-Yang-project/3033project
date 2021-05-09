@@ -25,7 +25,7 @@ For this project, we only use cropped faces(total 171318 images) and ramdom sele
 2.run load_data_imdb.ipynb to get the matrix representation for each image.
 2.1 run read_data(db = 'imdb') first to get age and gender information for each image
 2.2 run create_data_3(),create_data_5(),create_data_10() to get images grouped in 3 age classes, 5 age classes, and 10 age classes.
-#### the UTKFace dataset
+#### UTKFace dataset
 This dataset is a large-scale face dataset with long age span (range from 0 to 116 years old). The dataset consists of over 20,000 face images with annotations of age, gender, and ethnicity. This dataset doesn't have metadata file. The labels are included in the file name, like age_gender_race_date&time.jpg. In this project, we only consider the age below 80 and we group those image into 3 age classes, 5 age classes, and 10 age classes.
 - age: is an integer from 0 to 116, indicating the age
 - gender: is either 0 (male) or 1 (female)
