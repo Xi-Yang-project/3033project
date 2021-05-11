@@ -54,7 +54,9 @@ There are 5 files in this models folder.
 The prediction images are shown below
 
 
-<img width="300" height="400" src="https://github.com/Xi-Yang-project/3033project/blob/main/reference%20images/3ageclasses_prediction.png"/>
+<img width="300" height="200" src="https://github.com/Xi-Yang-project/3033project/blob/main/reference%20images/3ageclasses_prediction.png"/>
+<img width="300" height="200" src="https://github.com/Xi-Yang-project/3033project/blob/main/reference%20images/5ageclasses_prediction.png"/>
+<img width="300" height="200" src="https://github.com/Xi-Yang-project/3033project/blob/main/reference%20images/10ageclasses_prediction.png"/>
 
 
 
