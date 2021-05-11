@@ -51,6 +51,8 @@ There are 5 files in this models folder.
 5. predict the image
 6. add box and labels for image
 
+The prediction images are shown below
+![image](https://github.com/lexsaints/powershell/blob/master/IMG/ps2.png)
 
 
 
