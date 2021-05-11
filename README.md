@@ -52,7 +52,9 @@ There are 5 files in this models folder.
 6. add box and labels for image
 
 The prediction images are shown below
+
 ![image](https://github.com/lexsaints/powershell/blob/master/IMG/ps2.png)
+<img width="150" height="150" src="https://github.com/Xi-Yang-project/3033project/blob/main/reference%20images/3ageclasses_prediction.png"/>
 
 
 
