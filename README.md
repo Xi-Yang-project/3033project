@@ -49,7 +49,7 @@ When training the model,use below two codes:
 
 
 ## Image Prediction
-- age_gender_race_reference.ipynb
+- age_gender_race_inference.ipynb
 1. upload the image you want to predict
 2. upload the wight of final model
 3. use MTCNN to detect the face
@@ -59,14 +59,12 @@ When training the model,use below two codes:
 
 The prediction images are shown below
 
-age-gender_race/3 age classes/ Efficient_NetB6
-<img width="300" height="200" src="https://github.com/Xi-Yang-project/3033project/blob/main/reference%20images/3ageclasses_prediction.png"/>
+<img width="300" height="200" src="https://github.com/Xi-Yang-project/3033project/blob/main/reference%20images/3ageclasses_prediction.png" alt="age-gender_race/3 age classes/ Efficient_NetB6"/>
 
-age-gender_race/5 age classes/ Efficient_NetB4
-<img width="300" height="200" src="https://github.com/Xi-Yang-project/3033project/blob/main/reference%20images/5ageclasses_prediction.png"/>
+<img width="300" height="200" src="https://github.com/Xi-Yang-project/3033project/blob/main/reference%20images/5ageclasses_prediction.png",alt="age-gender_race/5 age classes/ Efficient_NetB4/">
 
-age-gender_race/10 age classes/ Efficient_NetB4
-<img width="300" height="200" src="https://github.com/Xi-Yang-project/3033project/blob/main/reference%20images/10ageclasses_prediction.png"/>
+
+<img width="300" height="200" src="https://github.com/Xi-Yang-project/3033project/blob/main/reference%20images/10ageclasses_prediction.png",alt="age-gender_race/10 age classes/ Efficient_NetB4"/>
 
 
 
