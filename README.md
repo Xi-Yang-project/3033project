@@ -40,7 +40,7 @@ There are 5 files in this models folder.
 - age_gender_race_utk.ipynb：model for age-gender-race prediction based on UTKFace dataset
 - age_gender_race_multisource.ipynb：model for age-gender-race prediction based on multi-source dataset
 
-def build_age_branch(x),def build_age_branch(x),def build_age_branch(x) are three funtion to add tasks
+Notice:def build_age_branch(x),def build_age_branch(x),def build_age_branch(x) are three funtion to add tasks, ModelCheckpoint() is used to save model weight for prediction
 
 When training the model,use below two codes:
 1. model = Efficient_Net('age_gender_B5', 'data_3_utk', trainable=True) to get the framework of model
